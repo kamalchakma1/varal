@@ -1,0 +1,188 @@
+
+/* === DESKTOP VIEW === */
+
+/* === MAIN CONTAINER === */
+.navbarDiv{
+    height: 50px;
+    margin-top: 20px;
+    width: 100%;
+}
+.navbarDiv__container{
+    display: flex;
+    height: inherit;
+    margin-left: 60px;
+    width: 90%;
+}
+
+/* === LOGO === */
+.navbarDiv__container__logo{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: inherit;
+    width: 10%;
+}
+/* === LOGO IMAGE === */
+.navbarDiv__container__logo>img{
+    width: 100px;
+}
+
+/* === MENU === */
+.navbarDiv__container__menu{
+    height: inherit;
+    width: 90%;
+}
+.navbarDiv__container__menu>ul{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    height: inherit;
+}
+.navbarDiv__container__menu>ul>li{
+    color: #747474;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    list-style-type: none;
+    padding-left: 40px;
+}
+.navbarDiv__container__menu>ul>li:first-child{
+    color:  #333333;
+}
+.navbarDiv__container__menu>ul>li:hover{
+    color:  #333333;
+
+}
+/* === BUTTON === */
+.navbarDiv__container__menu>ul>li>button{
+    background-color: #525ded;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    height: 45px;
+    width: 150px;
+}
+
+/* === EFFECT ON HOVER === */
+.navbarDiv__container__menu>ul>li>button:hover{
+    background-color: #5861e5;
+
+}
+
+/* === HAMBURGER DISABLE === */
+.navbarDiv__container__hamburger{
+    display: none;
+}
+
+/* === MOBILE VIEW === */
+
+@media screen and (max-width: 600px)
+{
+
+/* === MAIN CONTAINER === */
+.navbarDiv{
+        
+    width: 100%;
+}
+.navbarDiv__container{
+       
+    width: 0;
+}
+
+/* === LOGO === */
+.navbarDiv__container__logo{
+    margin-left: 10px;
+}
+
+/* === MENU (DISABLE FOR MOBILE VIEW) === */
+.navbarDiv__container__menu>ul{
+    display: none;
+}
+
+/* === HAMBURGER === */
+.navbarDiv__container__hamburger{
+    align-items: center;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 245px;
+    transition: transform 0.3s;
+    width: 50px;
+}
+.navbarDiv__container__hamburger>div{
+    background-color: #000;
+    height: 3px;
+    width: 21px;
+}
+.navbarDiv__container__hamburger__line2{
+    margin-top: 6px;
+}
+.navbarDiv__container__hamburger__line3{
+    margin-top: 6px;
+}
+.navbarDiv__container__hamburger__input{
+    position: absolute;
+    height: 100px;
+    opacity: 0;
+    width: 30px;
+    z-index: 100;
+}
+
+/* === EFFECT ON CHECK === */
+.navbarDiv__container__hamburger__input:checked ~.navbarDiv__container__hamburger__line1{
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+z-index: 1;
+}
+.navbarDiv__container__hamburger__input:checked ~.navbarDiv__container__hamburger__line2{
+    display: none;
+    transition: display 0.3s;
+}
+.navbarDiv__container__hamburger__input:checked ~.navbarDiv__container__hamburger__line3{
+    transform-origin: -1px -1px;
+    transform: rotate(-45deg);
+    transition: transform 0.3s;
+    z-index: 1;
+}
+
+/* === SUB MENU === */
+.navbarDiv__container__hamburger__subMenus{
+    background-color: #727ae9a3;
+    height: 670px;
+    display: none;
+    position: absolute;
+    top: 1px;
+    text-align: center;
+    transform: translateX(100%);
+    transition: transform display 0.5s;
+    right: 0;
+    width: 250px;
+    z-index: 1;
+}
+    
+.navbarDiv__container__hamburger__subMenus>li{
+    color: #fff;
+    font-size: 16px;
+    list-style-type: none;
+    padding-top: 80px;
+}
+.navbarDiv__container__hamburger__subMenus>li>button{
+    background-color: #525ded;
+    border: none;
+    border-radius: 3px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    height: 45px;
+    width: 150px;
+}
+.navbarDiv__container__hamburger__input:checked ~.navbarDiv__container__hamburger__subMenus{
+    display: block;
+    transform: none;
+}
+
+}

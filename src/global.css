@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    --varal-Header-Font-Family:'Lexend Deca', sans-serif;
+    --varColor: yellow;
+    --varal-Color-White: #fff;
+    --varal-Color-Blue: #3C79F5;
+    --varal-Font-Color: #0081C9;
+    --varal-Para-FontSize: 13px;
+    --varal-Para-Color: rgb(178, 178, 178);
+    --varal-Header-FontSize: 16px;
+    --varal-Common-Size-20: 20px;
+    
+}

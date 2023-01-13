@@ -1,0 +1,28 @@
+/* === MAIN CONTAINER === */
+.section7Div{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    position: relative;
+    text-align: center;
+    width: 500px;
+}
+
+/* === PARAGRAPH === */
+.section7Div__para{
+    font-size: 22px;
+    line-height: 30px;
+    padding: 0 30px;
+    
+}
+
+/* === ORANGE LINE === */
+.section7Div__orangeLine{
+    background-color: orange;
+    position: absolute;
+    top: 133px;
+    left: 115px;
+    height: 5px;
+    width: 285px;
+}

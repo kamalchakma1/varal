@@ -1,0 +1,135 @@
+/* === DESKTOP VIEW(some properties work as global) === */
+
+/* ===MAIN CONTAINER== */
+.section8Div{  
+    color: var(--varal-Font-Color);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 530px;
+    padding: 10px 30px;
+    width: 290px;
+}
+
+/* === EFFECT ON HOVER ===   */
+.section8Div:hover {
+    background-color: #0081C9;
+    color: var(--varal-Color-White);
+    z-index: 1;
+}
+
+.section8Div:hover .section8Div__header{
+    color: var(--varal-Color-White);
+}
+
+.section8Div:hover .section8Div__price{
+    color: var(--varal-Color-White);
+}
+
+.section8Div:hover .section8Div__price>span{
+    color: var(--varal-Color-White);
+}
+
+.section8Div:hover .section8Div__header__subHeading
+{
+    color: var(--varal-Color-White);
+}
+.section8Div:hover .section8Div__button
+{
+    margin-left: 0;
+    width: 190px;
+} 
+
+/* ===HEADER == */
+.section8Div__header{
+    color:rgb(57, 57, 239);
+    font-size: var(--varal-Header-FontSize);
+    font-family: var(--varal-Header-Font-Family);
+}
+
+/* ===PRICE=== */
+.section8Div__price{
+    color:rgb(8, 8, 208);
+    margin-top: 15px;
+}
+
+.section8Div__price>span{
+    color: rgb(205, 205, 205);
+    font-size: 12px;
+}
+
+/* ===HEADER SUB HEADING == */
+.section8Div__header__subHeading{
+    color: #036da5;
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 15px;
+}
+
+/* === FEATURE LIST === */
+.section8Div__price__features>li{
+    font-size: 11.5px;
+    padding-top: 15px;
+    list-style-type: none;
+}
+.section8Div__price__features>li>i{
+    font-size: 15px;
+    position: relative;
+    right: 4px;
+}
+
+/* ===BUTTON=== */
+.section8Div__button{
+    background-color: #fff;
+    border: 1px solid var(--varal-Font-Color);
+    border-radius: 3px;
+    color: var(--varal-Font-Color);
+    cursor: pointer;
+    font-size: 17px;
+    height: 55px;
+    margin-top: 15px;
+    margin-left: -18px;
+    width: 230px;
+}
+
+
+/* ===MOBILE VIEW === */
+
+@media screen and (max-width: 600px) {
+
+    /* ===MAIN CONTAINER=== */
+    .section8Div{
+        border: 1px solid #adadad;
+        height: 430px;
+        padding-right: 0;
+        width: 200px;
+    }
+
+    /* ===BUTTON=== */
+    .section8Div__button{
+        height: 40px;
+        margin-left: 0;
+        width: 140px;
+    } 
+    /* ===EFFECT ON HOVER=== */
+    .section8Div:hover .section8Div__button
+    {
+        margin-left: 10px;
+        width: 120px;
+    } 
+    .section8Div:hover {
+        width: 210px;
+        height:430px;
+    }
+  
+    .section8Div__price__features>li{
+        font-size: 11.5px;
+        padding-right: 10px;
+        margin-left: 0px;
+        list-style-type: none;
+    }
+    .section8Div__price__features>li>i{
+        font-size: 12px;
+        position: relative;
+        right: 4px;
+    }
+}

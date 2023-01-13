@@ -1,0 +1,51 @@
+
+/* === DESKTOP VIEW === */
+
+/* === MAIN CONTAINER === */
+.sectionBeforePrice{
+    height: 110px;
+    margin-bottom: 40px;
+    width: 300px;
+}
+
+/* === PARAGRAPH === */
+.sectionBeforePrice__para{
+    font-size: 15px;
+    line-height: 19px;
+    padding-bottom: 10px;
+}
+
+/* === ANCHOR TAG === */
+.sectionBeforePrice>a{
+    color:blue;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* === IMAGE === */
+.sectionBeforePrice>img{
+    border: none;
+    height: 15px;
+    position: relative;
+    top: 3px;
+    left: 5px;
+    width: 15px;
+}
+
+/* === MOBILE VIEW === */
+@media screen and (max-width: 600px)
+{
+
+/* === MAIN CONTAINER === */
+.sectionBeforePrice{
+    padding: 0px 10px;
+}    
+
+/* === PARAGRAPH === */
+.sectionBeforePrice__para{
+    color: #333;
+    font-size: 14px;
+    font-weight: 600; 
+}
+
+}

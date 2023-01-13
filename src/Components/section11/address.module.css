@@ -1,0 +1,50 @@
+/* === DESKTOP VIEW === */
+
+/* === MAIN CONTAINER === */
+.address{
+    height: min-content;
+    margin-left: 30px;
+    width: 220px;
+}
+
+/* === HEADER === */
+.address__header{
+    font-family: var(--varal-Header-Font-Family);
+    font-size: var(--varal-Header-FontSize);
+    font-weight: 600;
+}
+
+/* === PARAGRAPH === */
+.address>p{
+    color: var(--varal-Para-Color);
+    font-size: 11.5px;
+    font-weight: bold;
+    padding-right: 40px;
+    line-height: 20px;
+}
+.address__para1{
+    margin-top: 15px;
+}
+.address__para2{
+    margin-top: 20px;
+}
+
+/* === MOBILE VIEW === */
+@media screen and (max-width: 600px)
+{
+
+/* === MAIN CONTAINER === */
+.address{
+    height: min-content;
+    margin-left: 30px;
+    width: 150px;
+}
+/* === PARAGRAPH === */
+.address>p{
+    padding-right: 10px;
+    line-height: 20px;
+}
+ .address__para2{
+   display: none;
+}
+}

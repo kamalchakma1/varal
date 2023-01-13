@@ -1,0 +1,48 @@
+
+/* === DESKTOP VIEW(property  also work as global) === */
+
+/* ===MAIN CONTAINER=== */
+.section5Div{
+    height: 220px;
+    margin-bottom: 30px;
+    width: 265px;
+}
+
+/* ===IMAGE(ICON)== */
+.section5Div__img{
+    width: 32px;
+}
+/* ===HEADER=== */
+.section5Div__header{
+    font-size: var(--varal-Header-FontSize);
+    margin-top: 20px;
+}
+/* ===PARAGRAPH=== */
+.section5Div__para{
+    color: #888;
+    font-size: var(--varal-Para-FontSize);
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+/* ===GET STARTED=== */
+.section5Div__getStarted{
+    color: rgb(255, 196, 0);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+/* === MOBILE VIEW === */
+@media screen and (max-width: 600px)
+{
+    /* ===MAIN CONTAINER=== */
+    .section5Div{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 0 55px;
+        width: 100%;
+    }
+}

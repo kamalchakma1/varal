@@ -1,0 +1,70 @@
+
+/* === DESKTOP VIEW(some properties work as global) === */
+
+/* ===MAIN CONTAINER== */
+.section6Div{
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 490px;
+    margin-bottom: 110px;
+    padding: var(--varal-Common-Size-20);
+    position: relative;
+    width: 300px;
+}
+
+/* ===IMAGE(ICON)===*/
+.section6Div__img{
+     margin-top: var(--varal-Common-Size-20);
+     margin-left: 50px;
+     margin-bottom: 30px;
+     width: 160px;
+}
+
+/* ===HEADER=== */
+.section6Div__header{
+    font-family: var(--varal-Header-Font-Family);
+    font-size: var(--varal-Header-FontSize);
+    margin-top: var(--varal-Common-Size-20);
+    font-weight: 500;
+}
+
+/* ===PARAGRAPH===  */
+.section6Div__para{
+    color: var(--varal-Para-Color);
+    font-size: var(--varal-Para-FontSize);
+    line-height: var(--varal-Common-Size-20);
+    margin-top: var(--varal-Common-Size-20);
+    margin-bottom: var(--varal-Common-Size-20);
+}
+
+/* ===LEARN MORE === */
+.section6Div__learn_More{
+    color:blue;
+    position: relative;
+    bottom: 7px;
+    text-decoration: none;
+}
+
+/* ===RIGHT ARROW ICON=== */
+.section6Div__right_Arrow{
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+    width: 14px;
+}
+
+/* === MOBILE VIEW === */
+
+@media screen and (max-width: 600px)
+{
+    /* ===MAIN CONTAINER=== */
+    .section6Div{
+        margin-left: 12.5px;
+        margin-bottom: 40px;
+        width: 300px;
+    }
+
+}

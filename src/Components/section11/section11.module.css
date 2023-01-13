@@ -1,0 +1,33 @@
+/* === DESKTOP VIEW === */
+
+/* === MAIN CONTAINER === */
+.section11Div{
+   height: min-content;
+   margin-left: 30px;
+    width: 180px;
+}
+
+/* ===HEADER=== */
+.section11Div__header{
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+/* === LIST === */
+.section11Div__list>li{
+    color: rgb(172, 171, 171);
+    cursor: pointer;
+    font-size: 13px;
+    list-style-type: none;
+
+}
+
+/* === MAOBILE VIEW === */
+@media screen and (max-width: 600px)
+{
+    /* === MAIN CONTAINER === */
+    .section11Div{
+       height: min-content;
+       margin-left: 30px;
+        width: 95px;
+    }
+}

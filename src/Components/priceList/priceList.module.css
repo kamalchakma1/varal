@@ -1,0 +1,72 @@
+
+/* === DESKTOP VIEW === */
+.priceList__conatiner{
+    display: none;
+}
+
+/* === MOBILE VIEW === */
+@media screen and (max-width: 600px)
+{
+
+/* === MAIN CONTAINER === */
+.priceList__conatiner{
+    display: block;
+    height: 450px;
+    margin-left: 10px;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 305px;
+}
+
+/* === CARDS CONTAINER === */
+.priceList__conatiner__cards{
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+    margin-left: -160px;
+    width: 620px;
+}
+
+/* === EFFECT ON HOVER === */
+
+.card1:hover button{
+    background-color: #525ded;
+    height: 25px;
+    margin-top: -5px;
+    width: 25px;
+}
+.card2:hover button{
+    background-color: #525ded;
+    height: 25px;
+    margin-top: -5px;
+    width: 25px;
+}
+    
+.card3:hover button{
+    background-color: #525ded;
+    height: 25px;
+    margin-top: -5px;
+    width: 25px;
+} 
+
+/* === CARD CONTROLLER(ROUND BUTTON) === */
+.priceList__cotainer__controller{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    width: 130px;
+    scroll-snap-align: start;
+    height: auto;
+}
+
+/* ==== ROUND BUTTONS === */
+.priceList__cotainer__controller>a>button{
+    background-color: inherit;
+    border: 1px solid #525ded;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+}
+}

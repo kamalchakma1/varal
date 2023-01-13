@@ -1,0 +1,81 @@
+/* === MAIN CONTAINER === */
+.subscribeDiv{
+    height: 140px;
+    margin-left: 30px;
+    width: 250px;
+}
+
+/* === HEADER === */
+.subscribeDiv__header{
+    font-size: 13px;
+    font-family: var(--varal-Header-Font-Family) ;
+}
+/* === THIS ONE DISABLE IN DESKTOP === */
+#subscribeDiv__header__mobile{
+    display: none;
+}
+/* === PARAGRAPH === */
+.subscribeDiv__para{
+     color: var(--varal-Para-Color);
+     padding-right: 30px;
+     font-size: 13px;
+     margin-top: 10px;
+}
+
+/* === INPUT === */
+.subscribeDiv__input{
+    background-color: rgb(244, 244, 244);
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;    
+    height: 38px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.subscribeDiv__input:focus{
+    outline: none;
+}
+
+/* === IMAGE === */
+.subscribeDiv__image{
+    position: relative;
+    top: 14px;
+    height: 38px;
+    width: 35px;
+}
+
+/* ===MOBILE VIEW=== */
+@media screen and (max-width: 600px)
+{
+
+    .subscribeDiv{
+        /* height: 140px;
+        margin-left: 30px; */
+        width: 140px;
+    }
+    /* === HEADER === */
+    #subscribeDiv__header__mobile{
+        display: block;
+    }
+    #subscribeDiv__header__desktop{
+        display: none;
+    }
+    /* === PARAGRAPH === */
+    .subscribeDiv__para{
+        display: none;
+    }
+    /* === INPUT == */
+    .subscribeDiv__input{
+        font-size: 11px;
+        height: 30px;
+        padding-left: 5px;
+        width: 100px;
+    }
+    /* === IMAGE === */
+    .subscribeDiv__image{
+        position: relative;
+        top: 11px;
+        height: 30px;
+        width: 25px;
+    }
+}

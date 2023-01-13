@@ -1,0 +1,53 @@
+/* === MIAN CONTAINER=== */
+.feedbackDiv{
+    position: relative;
+    height: 150px;
+    width: 320px;
+}
+
+/* === IMAGE === */
+.feedbackDiv__image{
+    border: 1px solid rgb(107, 107, 255);
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    width: 40px;
+}
+
+/* === PARAGRAPH === */
+.feedbackDiv__para{
+    color: rgb(89, 89, 89);
+    font-size: 13px;
+    padding: 5px 40px 0 80px;
+}
+
+/* === QUOTES MARKS === */
+.feedback__quotes1
+{
+    font-size: 25px;
+    position: absolute;
+    left: 65px;
+}
+.feedback__quotes2
+{
+    font-size: 25px;
+    position: absolute;
+    bottom: 70px;
+    right: 165px;
+}
+
+/* === AUTHOR ===  */
+.feedbackDiv__author{
+    color: #000 !important;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/*  === LINE LEFT SIDE OF AUTHOR === */
+.feedbackDiv__line{
+    background-color: rgb(107, 107, 255);
+    position: relative;
+    top: -10px;
+    height: 2px;
+    width: 35px;
+}

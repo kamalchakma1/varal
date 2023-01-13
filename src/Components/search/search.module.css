@@ -1,0 +1,44 @@
+
+/* === DESKTOP VIEW === */
+/* === MAIN CONTEINER === */
+.searchDiv{
+    position: relative;
+    width: 270px;
+}
+/* === SEARCH ICON === */
+.searchDiv>i{
+    color: #525ded;
+    font-size: 17px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+/* === SEARCH BOX === */
+.searchDiv__searchBox{
+    border: 1px solid #525ded;
+    border-radius: 3px;
+    height: 35px;
+    padding-left: 40px;
+    width: 305.5px;
+}
+.searchDiv__searchBox:focus {
+    outline: none;
+}
+::placeholder{
+    color: #525ded;
+}
+
+/* === MOBILE VIEW === */
+@media screen and (max-width: 600px)
+{
+    /* === MAIN CONTAINER === */
+.searchDiv{
+    position: relative;
+    margin-left: 20px;
+    width: 100%;
+}
+    /* === SEARCH BOX === */
+.searchDiv__searchBox{
+    width: 330px;
+}
+}

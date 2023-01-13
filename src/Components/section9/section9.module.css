@@ -1,0 +1,10 @@
+/* === MAIN CONTAINER === */
+.section9Div{
+    height: 50px;
+    width: 250px;
+}
+/* === HEADER === */
+.section9Div__header{
+    border-left: 5px solid var(--varal-Color-Blue);
+    padding: 5px 0 5px 20px;
+}

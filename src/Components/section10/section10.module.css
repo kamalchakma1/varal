@@ -1,0 +1,63 @@
+/* === MAIN CONTAINER === */
+.section10Div{
+
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    height: 90px;
+    width: 350px;
+}
+
+/* === HOVER EFFECT === */
+.section10Div:hover{
+    background-color: var(--varal-Color-Blue);
+    color: var(--varal-Color-White);
+}
+.section10Div:hover i{
+    border: 1px solid var(--varal-Color-White);
+    color: var(--varal-Color-White);
+}
+.section10Div:hover .section10Div__header{
+    color: var(--varal-Color-White);
+}
+.section10Div:hover .section10Div__postTime{
+    color: var(--varal-Color-White);
+}
+
+/* === IMAGE(ICON) === */
+.section10Div>i{
+    border: 1px solid var(--varal-Color-Blue);
+    background-color: inherit;
+    border-radius: 3px;
+    color: var(--varal-Color-Blue);
+    font-size: 40px;
+    padding: 10px;
+}
+
+/* ===HEADER===  */
+.section10Div__header{
+    color: #000;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 0 40px 0 10px;
+}
+
+/* ===POST TIME=== */
+.section10Div__postTime{
+    color: var(--varal-Font-Color);
+    font-size: 12px;
+    margin-top:  4px;
+}
+
+/* === MOBILE VIEW === */
+@media screen and (max-width: 600px)
+{
+    /* === MAIN CONTAINER === */
+    .section10Div{
+        height: 80px;
+        width: 300px;
+    }
+}
